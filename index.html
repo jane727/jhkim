@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio for software engineer Jane">
+  <meta name="author" content="Jane Kim"></meta>
+  <meta property="og:image" content="imgs/og.jpg" /> 
+  <title>KJH PORTFOLIO</title>
+  <script src="https://kit.fontawesome.com/e07ac14294.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="imgs/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer=""></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</head>
+<body>
+  <!-- navbar -->
+  <nav id="navbar">
+     <div class="navbar__logo">
+      <a href="/">jUNGHA !</a>
+    </div>
+    <ul class="navbar__menu">
+      <li class="navbar__menu__item" data-id="#home">HOME</li>
+      <li class="navbar__menu__item" data-id="#about">ABOUT</li>
+      <li class="navbar__menu__item" data-id="#skills">SKILL</li>
+      <li class="navbar__menu__item" data-id="#project">PROJECTS</li>
+      <li class="navbar__menu__item" data-id="#contact">CONTACT</li>
+    </ul>
+    <!-- Toggle Button -->
+    <button class="navbar__toggle-btn not-active">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+  <!-- home -->
+  <section id="home" class="section">
+    <div class="home__container">
+      <div class="home__box">
+        <h1 class="home__title">
+          I'M<br>
+          FRONT-END<br>
+          DEVELOPER
+        </h1>
+      </div>
+      <div class="home__box">
+          <svg class="home__ghost" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="384" height="512" viewBox="0 0 384 512"><path fill="#f1e5ff" d="m50.8 452.1l-31.6 25.3c-2.1 1.7-4.7 2.6-7.4 2.6C5.3 480 0 474.7 0 468.2V192C0 86 86 0 192 0s192 86 192 192v276.2c0 6.5-5.3 11.8-11.8 11.8c-2.7 0-5.3-.9-7.4-2.6l-31.6-25.3c-3.3-2.7-7.5-4.1-11.8-4.1c-5.9 0-11.5 2.8-15 7.5l-37.6 50.1c-3 4-7.8 6.4-12.8 6.4s-9.8-2.4-12.8-6.4l-38.4-51.2c-3-4-7.8-6.4-12.8-6.4s-9.8 2.4-12.8 6.4l-38.4 51.2c-3 4-7.8 6.4-12.8 6.4s-9.8-2.4-12.8-6.4l-37.6-50.1c-3.6-4.7-9.1-7.5-15-7.5c-4.3 0-8.4 1.5-11.7 4.1zM160 192c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32zm96 32c17.7 0 32-14.3 32-32s-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32z"></path>
+          </svg>
+      </div>
+    </div>
+    <div class="banner">
+      <div class="banner__item">
+        <p class="banner__text">
+          TO INFINITY AND BEYOND!<br>
+          무한한 공간 저 너머로
+        </p>
+        <p class="banner__title">
+          I WILL BECOME A DEVELOPER<br>
+          WHO NEVER GIVES UP
+        </p>
+      </div>
+      <a href="#about" class="banner__item banner__item--color-orange">
+        <p class="banner__text">Introduce you to who I am</p>
+        <p class="banner__title">ALL ABOUT ME &nbsp;&nbsp; <img src="imgs/more-arrow.png" alt="바로가기">&nbsp;&nbsp;</p>
+      </a>
+      <div class="banner__item">
+        <img src="imgs/star-black.png" alt="star" class="banner__img">
+      </div>
+      <a href="#project" class="banner__item  banner__item--color-purple">
+        <p class="banner__text">Take a look at my work</p>
+        <p class="banner__title">MY PROJECTS &nbsp;&nbsp; <img src="imgs/more-arrow.png" alt="바로가기">&nbsp;&nbsp;</p>
+      </a>
+    </div>
+  </section>
+  <!-- about -->
+  <section id="about" class="section">
+    <div class="section__container">
+      <h1>ABOUT ME</h1>
+      <div class="about">
+        <div class="about__profile">
+          <img src="imgs/profile.jpg" alt="프로필">
+        </div>
+        <div class="about__resume">
+          <div class="about__title">
+            <span class="about__name">김정하</span>
+            <span class="about__birth">92.07.27</span>
+          </div>
+          <ul class="about__list">
+            <li>국립경상대학교 식품영양학과 졸업 (2016)</li>
+            <li>정보처리기사 자격증 취득 (2016.11)</li>
+            <li>그린컴퓨터아카데미 (2018.10 ~ 2019.03)<br> : 디지털 컨버전스 (UI/UX엔지니어링) 프론트엔드 개발자 과정 이수</li>
+            <li>(주)유니드 개발팀 근무 (2019.06 ~ 2022.05)<br> : 웹 개발 및 퍼블리싱 / UI,UX 설계 및 디자인 / 개발팀장(과장) 근무</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- skill -->
+  <section id="skills" class="section">
+    <div class="section__container">
+      <h1>SKILLS</h1>
+      <!-- <div class="skillset">
+        <div class="skill">
+          <div class="skill__description">
+            <span>HTML</span>
+            <div class="skill__bar">
+              <div class="skill__value" style="width:99%"></div>
+            </div>
+            <span>99%</span>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill__description">
+            <span>CSS</span>
+            <div class="skill__bar">
+              <div class="skill__value css" style="width:99%"></div>
+            </div>
+            <span>99%</span>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill__description">
+            <span>Javascript</span>
+            <div class="skill__bar">
+              <div class="skill__value js" style="width:70%"></div>
+            </div>
+            <span>70%</span>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill__description">
+            <span>TypeScript</span>
+            <div class="skill__bar">
+              <div class="skill__value ts" style="width:50%"></div>
+            </div>
+            <span>50%</span>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill__description">
+            <span>React</span>
+            <div class="skill__bar">
+              <div class="skill__value react" style="width:50%"></div>
+            </div>
+            <span>50%</span>
+          </div>
+        </div>
+      </div> -->
+      <div class="skill__list">
+        <div class="skill__html">
+          <i class="fab fa-html5"></i>
+          <span>HTML</span>
+        </div>
+        <div class="skill__css">
+          <i class="fab fa-css3-alt"></i>
+          <span>CSS</span>
+        </div>
+        <div class="skill__scss">
+          <i class="fab fa-sass"></i>
+          <span>SCSS/SASS</span>
+        </div>
+        <div class="skill__js">
+          <i class="fab fa-js"></i>
+          <span>Javascript</span>
+        </div>
+        <div class="skill__react">
+          <i class="fab fa-react"></i>
+          <span>React</span>
+        </div>
+        <div class="skill__git">
+          <i class="fab fa-github"></i>
+          <span>github/git</span>
+        </div>
+        <div class="skill__editor">
+          <i class="fas fa-code"></i>
+          <span>VS Code</span>
+        </div>
+        <div class="skill__blender">
+          <i class="fas fa-cube"></i>
+          <span>Blender</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- projects -->
+  <section id="project" class="section">
+    <div class="section__wide">
+        <h1><img src="imgs/purple-star.png" alt="star"> MY PROJECTS <img src="imgs/yellow-star.png" alt="star"></h1>
+      <div class="work__categories">
+        <button class="category__btn selected" data-filter="*">All <span class="category__count">21</span></button>
+        <button class="category__btn" data-filter="web">Web Sites <span class="category__count">15</span></button>
+        <button class="category__btn" data-filter="js">Javascript <span class="category__count">2</span></button>
+        <button class="category__btn" data-filter="react">React <span class="category__count">3</span></button>
+        <button class="category__btn" data-filter="uiux">etc. <span class="category__count">1</span></button>
+      </div>
+      <div class="work__projects">
+        <div class="mySwiper">
+          <div class="swiper-wrapper">
+            <a href="https://www.gnstartup.kr/" class="project swiper-slide" target="_blank" data-type="web">
+              <img src="imgs/projects/gnstartup.jpg" class="project__img" alt="project02">
+              <div class="project__description">
+                <h3>경남창업포털SIGN</h3>
+                <span>Vue</span>
+              </div>
+              <div class="project__more">
+                VIEW MORE <i class="fas fa-plus"></i>
+              </div>
+            </a>
+            <a href="http://www.xn--6-v85ew7hc2v44fiuk.com/" class="project swiper-slide" target="_blank" data-type="web">
+              <img src="imgs/projects/gnam6.jpg" class="project__img" alt="project02">
+              <div class="project__description">
+                <h3>경남6차산업지원센터</h3>
+                <span>HTML, CSS, JS, PHP</span>
+              </div>
+              <div class="project__more">
+                VIEW MORE <i class="fas fa-plus"></i>
+              </div>
+            </a>
+            <a href="https://gcaf.or.kr/" class="project swiper-slide" target="_blank" data-type="web">
+              <img src="imgs/projects/gcaf.jpg" class="project__img" alt="project02">
+              <div class="project__description">
+                <h3>경남문화예술진흥원</h3>
+                <span>HTML, CSS, JS, JQuery</span>
+              </div>
+              <div class="project__more">
+                VIEW MORE <i class="fas fa-plus"></i>
+              </div>
+            </a>
+            <a href="http://www.gaecheonart.com/" class="project swiper-slide" target="_blank" data-type="web">
+              <img src="imgs/projects/gaecheon2022.jpg" class="project__img" alt="project02">
+              <div class="project__description">
+                <h3>개천예술제 2022</h3>
+                <span>HTML, CSS, JS, JQuery</span>
+              </div>
+              <div class="project__more">
+                VIEW MORE <i class="fas fa-plus"></i>
+              </div>
+            </a>
+            <a href="https://www.yc.ac.kr/" class="project swiper-slide" target="_blank" data-type="web">
+              <img src="imgs/projects/yonam_univ.jpg" class="project__img" alt="project01">
+              <div class="project__description">
+                <h3>연암공과대학교</h3>
+                <span>HTML, CSS, Javascript</span>
+              </div>
+              <div class="project__more">
+                VIEW MORE <i class="fas fa-plus"></i>
+              </div>
+            </a>
+            <a href="https://www.klc.ac.kr/" class="project swiper-slide" target="_blank" data-type="web">
+              <img src="imgs/projects/klc.jpg" class="project__img" alt="project02">
+              <div class="project__description">
+                <h3>한국승강기대학교</h3>
+                <span>HTML, CSS, Javascript</span>
+              </div>
+              <div class="project__more">
+                VIEW MORE <i class="fas fa-plus"></i>
+              </div>
+            </a>
+            <a href="https://univ.namhae.ac.kr/namhae_01/web/main/mainPage.do" class="project swiper-slide" target="_blank" data-type="web">
+              <img src="imgs/projects/namhae_univ.jpg" class="project__img" alt="project02">
+              <div class="project__description">
+                <h3>경남도립남해대학</h3>
+                <span>HTML, CSS, Javascript</span>
+              </div>
+              <div class="project__more">
+                VIEW MORE <i class="fas fa-plus"></i>
+              </div>
+            </a>
+            <a href="http://www.hwangmaesan.kr/" class="project swiper-slide" target="_blank" data-type="web">
+              <img src="imgs/projects/hmsan.jpg" class="project__img" alt="project02">
+              <div class="project__description">
+                <h3>황매산군립공원</h3>
+                <span>HTML, CSS, Js, JQuery</span>
+              </div>
+              <div class="project__more">
+                VIEW MORE <i class="fas fa-plus"></i>
+              </div>
+            </a>
+            <a href="http://www.scseng.co.kr/" class="project swiper-slide" target="_blank" data-type="web">
+              <img src="imgs/projects/scseng.jpg" class="project__img" alt="project02">
+              <div class="project__description">
+                <h3>서경엔지니어링</h3>
+                <span>HTML, CSS, Js, JQuery</span>
+              </div>
+              <div class="project__more">
+                VIEW MORE <i class="fas fa-plus"></i>
+              </div>
+            </a>
+            <a href="http://www.bigsspringtree.com/" class="project swiper-slide" target="_blank" data-type="web">
+              <img src="imgs/projects/bigsspringtree.jpg" class="project__img" alt="project02">
+              <div class="project__description">
+                <h3>빅스스프링트리</h3>
+                <span>HTML, CSS, Js, GSAP</span>
+              </div>
+              <div class="project__more">
+                VIEW MORE <i class="fas fa-plus"></i>
+              </div>
+            </a>
+            <a href="http://bjsilk.kr/" class="project swiper-slide" target="_blank" data-type="web">
+              <img src="imgs/projects/bjsilk.jpg" class="project__img" alt="project02">
+              <div class="project__description">
+                <h3>비이제이실크</h3>
+                <span>HTML, CSS, JS, JQuery</span>
+              </div>
+              <div class="project__more">
+                VIEW MORE <i class="fas fa-plus"></i>
+              </div>
+            </a>
+            <a href="http://www.miraeaero.com/" class="project swiper-slide" target="_blank" data-type="web">
+              <img src="imgs/projects/mirae.jpg" class="project__img" alt="project02">
+              <div class="project__description">
+                <h3>미래항공</h3>
+                <span>HTML, CSS, JS, JQuery</span>
+              </div>
+              <div class="project__more">
+                VIEW MORE <i class="fas fa-plus"></i>
+              </div>
+            </a>
+            <a href="https://svcarwash.co.kr/main/index" class="project swiper-slide" target="_blank" data-type="web">
+              <img src="imgs/projects/svcarwash.jpg" class="project__img" alt="project02">
+              <div class="project__description">
+                <h3>SV회오리세차</h3>
+                <span>HTML, CSS, JS</span>
+              </div>
+              <div class="project__more">
+                VIEW MORE <i class="fas fa-plus"></i>
+              </div>
+            </a>
+            <a href="http://www.asiahotel.co.kr/" class="project swiper-slide" target="_blank" data-type="web">
+              <img src="imgs/projects/asiahotel.jpg" class="project__img" alt="project02">
+              <div class="project__description">
+                <h3>아시아레이크사이드호텔</h3>
+                <span>HTML, CSS, JS, JQuery</span>
+              </div>
+              <div class="project__more">
+                VIEW MORE <i class="fas fa-plus"></i>
+              </div>
+            </a>
+            <a href="https://www.gnsinbo.or.kr/consult/step1.php" class="project swiper-slide" target="_blank" data-type="web">
+              <img src="imgs/projects/gnsinbo.jpg" class="project__img" alt="project02">
+              <div class="project__description">
+                <h3>경남신용보증재단</h3>
+                <span>HTML, CSS, JS, PHP</span>
+              </div>
+              <div class="project__more">
+                VIEW MORE <i class="fas fa-plus"></i>
+              </div>
+            </a>
+            <a href="https://jane727.github.io/jellygame/" class="project swiper-slide" target="_blank" data-type="js">
+              <img src="imgs/projects/jellygame.jpg" class="project__img" alt="project02">
+              <div class="project__description">
+                <h3>젤리를 찾아라!</h3>
+                <span>HTML, CSS, Javascript</span>
+              </div>
+              <div class="project__more">
+                VIEW MORE <i class="fas fa-plus"></i>
+              </div>
+            </a>
+            <a href="https://jane727.github.io/task/" class="project swiper-slide" target="_blank" data-type="js">
+              <img src="imgs/projects/task.jpg" class="project__img" alt="project02">
+              <div class="project__description">
+                <h3>할일 메모 어플리케이션</h3>
+                <span>HTML, CSS, Javascript</span>
+              </div>
+              <div class="project__more">
+                VIEW MORE <i class="fas fa-plus"></i>
+              </div>
+            </a>
+            <a href="https://dour-concrete-a78.notion.site/8defa0ff67c64235932a5eb3a638fd16" class="project swiper-slide" target="_blank" data-type="uiux">
+              <img src="imgs/projects/kicet.jpg" class="project__img" alt="project02">
+              <div class="project__description">
+                <h3>한국세라믹기술원 방문객 안전교육 시스템</h3>
+                <span>Unity, Blender</span>
+              </div>
+              <div class="project__more">
+                VIEW MORE <i class="fas fa-plus"></i>
+              </div>
+            </a>
+            <a href="#" class="project swiper-slide" target="_blank" data-type="react">
+              <img src="imgs/projects/project01.jpg" class="project__img" alt="project02">
+              <div class="project__description">
+                <h3>준비중입니다</h3>
+                <span>React</span>
+              </div>
+              <div class="project__more">
+                VIEW MORE <i class="fas fa-plus"></i>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-navigation">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+      <script>
+        // swiper
+        const swiper = new Swiper(".mySwiper", {
+          slidesPerView: 4,
+          centeredSlides: false,
+          grabCursor: true,
+          spaceBetween: 0,
+          loop :false,
+          observer: true,
+          observeParents: true, 
+          autoplay: {
+            delay:4000,
+            disableOnInteraction:false,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          breakpoints: {
+            960: {
+              slidesPerView:4,
+            },
+            768: {
+              slidesPerView:3,
+            },
+            480: {
+              slidesPerView:2,
+            },
+            1: {
+              slidesPerView:2,
+            }
+          }
+        });
+      </script>
+    </div>
+  </section>
+  <!-- contact -->
+  <section id="contact">
+    <div class="contact__content">
+      <h1>CONTACT ME !</h1>
+      <h2><i class="fas fa-envelope-open"></i> bykim125@gmail.com</h2>
+      <h2><i class="fab fa-github"></i> <a href="https://github.com/jane727" target="_blank">https://github.com/jane727</a></h2>
+      <h2><i class="fas fa-mobile-alt"></i> 010-4110-6412</h2>
+      <img src="imgs/mini_ghost.png" alt="ghost" class="contact__ghost">
+      <img src="imgs/mini_moon.png" alt="moon" class="contact__moon">
+    </div>
+    <p class="contact__copyrights">2023 Jane Kim - All rights reserved.</p>
+  </section>
+  <!-- arrow up -->
+  <button class="arrow-up"><i class="fas fa-arrow-up" aria-hidden="true"></i></button>
+</body>
+</html>
